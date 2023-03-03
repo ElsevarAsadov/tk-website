@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ana Səhifə</title>
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="../../static/style/layout.css" />
+    {% block css %} {% endblock css %}
+    <!--FONTAWESOME ICONS-->
+    <script
+      src="https://kit.fontawesome.com/c7b2d31232.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--JQUERY CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!-- LOGO SLIDER -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <!-- LOGOS -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <body class="body">
+    <!--Container-->
+    <div class="container">
+      <nav class="mobile"></nav>
+      <nav class="row-sm mb-2 center" id="nav">
+        <div class="col d-flex align-items-center justify-content-center">
+          <a href="/home"
+            ><img
+              class=""
+              id="logo"
+              src="../../static/media/general/bsu_logo.png"
+              alt="logo"
+            />
+          </a>
+        </div>
+        <div class="col-12 text-center pt-3 pd-2 center">
+          <h1 style="color: white !important">Baki Dövlət Üniversteti</h1>
+          <p class="faculty pb-4">Tətbiqi Riyaziyyat Və Kibernetika</p>
+        </div>
+      </nav>
+
+      <div
+        class="col-12 pt-3 pb-3 d-flex align-items-center justify-content-between search"
+      >
+        <form class="form-inline">
+          <input
+            id="search-box"
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Axtar"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Axtar
+          </button>
+        </form>
+
+        <div class="social-media">
+          <a href="https://www.youtube.com/@BDUTV"
+            ><img
+              class="social-media-icon"
+              data-toggle="tooltip"
+              title="Youtube hesabı"
+              src="../../static/media/general/yt-logo.png"
+              alt="insta"
+          /></a>
+          <a href="https://www.instagram.com/bdu.az_/?hl=en"
+            ><img
+              class="social-media-icon"
+              data-toggle="tooltip"
+              title="Instragram hesabı"
+              src="../../static/media/general/insta-logo.png"
+              alt="insta"
+          /></a>
+          <a href="https://www.facebook.com/bdu.eduaz1919/"
+            ><img
+              class="social-media-icon"
+              ata-toggle="tooltip"
+              title="Facebook hesabı"
+              src="../../static/media/general/face-logo.png"
+              alt="face"
+          /></a>
+        </div>
+      </div>
+      <button
+        type="button"
+        id="slide-down-btn"
+        class="btn btn-primary btn-lg btn-block"
+      >
+        <i class="fa-sharp fa-solid fa-caret-down down"></i>
+      </button>
+      
+      <div class="col-12 pb-4 pt-4 nav-menu">
+        <li class="menu-item">
+          <a href="home"
+            ><i class="fa-sharp fa-solid fa-angles-right"></i>Ana Səhifə</a
+          >
+        </li>
+
+        <li class="menu-item">
+          <a href="news"
+            ><i class="fa-sharp fa-solid fa-angles-right"></i>Xəbərlər</a
+          >
+        </li>
+
+        <li class="menu-item">
+          <a href="about"
+            ><i class="fa-sharp fa-solid fa-angles-right"></i>Kafedra
+            Haqqında</a
+          >
+        </li>
+
+        <li class="menu-item">
+          <a href="table"
+            ><i class="fa-sharp fa-solid fa-angles-right"></i>Dərs və İmtahan
+            cədvələri</a
+          >
+        </li>
+
+        <li class="menu-item">
+          <a href="#"
+            ><i class="fa-sharp fa-solid fa-angles-right"></i>Elmi Şura</a
+          >
+        </li>
+        <li class="menu-item">
+          <a href="#"
+            ><i class="fa-sharp fa-solid fa-angles-right"></i>Tyutorlar</a
+          >
+        </li>
+
+        <li class="menu-item">
+          <a href="#"
+            ><i class="fa-sharp fa-solid fa-angles-right"></i>Dissertasiya
+            İşləri</a
+          >
+        </li>
+        <li class="menu-item">
+          <a href="#"
+            ><i class="fa-sharp fa-solid fa-angles-right"></i>Görkəmli
+            Məzunlar</a
+          >
+        </li>
+        <li class="menu-item">
+          <a href="/sabah"
+            ><i class="fa-sharp fa-solid fa-angles-right"></i>SABAH</a
+          >
+        </li>
+        <li class="menu-item">
+          <a href="#"
+            ><i class="fa-sharp fa-solid fa-angles-right"></i>Koreya Mərkəzi</a
+          >
+        </li>
+      </div>
+
+      {% block content %} {% endblock content %}
+      
+      <!-- LOGO SLIDER -->
+      <div class="container-logos">
+        <!-- <h2 class="h2-logo">Our Partners</h2> -->
+        <section class="customer-logos slider">
+          <div class="slide">
+            <a href="http://bsu.edu.az/" target="_blank"
+              ><img
+                class="slider-logo"
+                src="../../static/media/general/bsu_logo.png"
+            /></a>
+          </div>
+          <div class="slide">
+            <a href="http://sabah.edu.az/az" target="_blank"
+              ><img class="slider-logo" src="../../static/media/general/sabah.png"
+            /></a>
+          </div>
+          <div class="slide">
+            <a href="https://edu.gov.az/" target="_blank"
+              ><img
+                class="slider-logo"
+                src="../../static/media/general/tehsil-naz-logo.png"
+            /></a>
+          </div>
+          <div class="slide">
+            <a href="https://science.gov.az/az" target="_blank"
+              ><img
+                class="slider-logo"
+                src="../../static/media/general/amea.png"
+            /></a>
+          </div>
+          <div class="slide">
+            <a href="https://mys.gov.az/" target="_blank"
+              ><img
+                class="slider-logo"
+                src="../../static/media/general/gencler_idman.png"
+            /></a>
+          </div>
+          <div class="slide">
+            <a href="https://www.virtualkarabakh.az/" target="_blank">
+              <img
+                class="slider-logo"
+                src="../../static/media/general/virtual_karabakh.png"
+            /></a>
+          </div>
+          <div class="slide">
+            <a href="https://mincom.gov.az/az/" target="_blank"
+              ><img
+                class="slider-logo"
+                src="../../static/media/general/neqliyyat.png"
+            /></a>
+          </div>
+        </section>
+      </div>
+      <!-- FOOOTER -->
+      <footer class="bg-primary text-center text-lg-start text-white">
+        <!-- Grid container -->
+        <div class="container p-4 footer-container">
+          <!--Grid row-->
+          <div class="row my-4">
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <div
+                class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto"
+                style="width: 150px; height: 150px"
+              >
+                <img
+                  src="../../static/media/general/bsu_logo.png"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <br /><br />
+              <ul class="list-unstyled d-flex flex-row justify-content-center">
+                <li>
+                  <a
+                  target="_blank"
+                    class="text-white px-2"
+                    href="https://www.facebook.com/bdu.eduaz1919/"
+                  >
+                    <i class="fab fa-facebook-square"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                  target="_blank"
+                    class="text-white px-2"
+                    href="https://www.instagram.com/bdu.az_/?hl=en"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                  target="_blank"
+                    class="text-white ps-2"
+                    href="https://www.youtube.com/@BDUTV"
+                  >
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a href="home" class="text-white"
+                    ><i class="fa-sharp fa-solid fa-circle"></i>Ana Səhifə</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="news" class="text-white"
+                    ><i class="fa-sharp fa-solid fa-circle"></i>Xəbərlər</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="about" class="text-white"
+                    ><i class="fa-sharp fa-solid fa-circle"></i>Kafedra
+                    Haqqında</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="table" class="text-white"
+                    ><i class="fa-sharp fa-solid fa-circle"></i>Dərs və İmtahan
+                    cədvələri</a
+                  >
+                </li>
+
+                <li class="mb-2">
+                  <a href="#!" class="text-white"
+                    ><i class="fa-sharp fa-solid fa-circle"></i>Elmi Şura</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-white"
+                    ><i class="fa-sharp fa-solid fa-circle"></i>Tyutorlar</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a href="#!" class="text-white"
+                    ><i class="fa-sharp fa-solid fa-circle"></i>Tyutorlar</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-white"
+                    ><i class="fa-sharp fa-solid fa-circle"></i>Dissertasiya
+                    İşlər</a
+                  >
+                </li>
+
+                <li class="mb-2">
+                  <a href="#!" class="text-white"
+                    ><i class="fa-sharp fa-solid fa-circle"></i>Görkəmli
+                    Məzunlar</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="/sabah" class="text-white"
+                    ><i class="fa-sharp fa-solid fa-circle"></i>SABAH</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-white"
+                    ><i class="fa-sharp fa-solid fa-circle"></i>Koreya
+                    Mərkəzi</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <!-- <h5 class="text-uppercase mb-4">Contact</h5> -->
+
+              <ul class="list-unstyled">
+                <li>
+                  <p>
+                    <i class="fas fa-map-marker-alt pe-2"></i>Z.Xəlilov küçəsi,
+                    23 AZ1148, AZ1073/1
+                  </p>
+                </li>
+                <li>
+                  <p><i class="fas fa-phone pe-2"></i>(012) 440 27 70</p>
+                </li>
+                <li>
+                  <p>
+                    <i class="fas fa-envelope pe-2 mb-0"></i>info@bsu.edu.az
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div
+          id="copyright-section"
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          © 2023 Copyright:
+          <a class="text-white" href="#">ZZZ.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+      <!-- End of .container -->
+      <script src="../../static/script/main.js"></script>
+    </div>
+  </body>
+</html>

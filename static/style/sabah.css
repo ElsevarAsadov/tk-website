@@ -1,0 +1,17 @@
+.hr{
+  height: 5px;
+  background-color: white;
+  margin: 1.5rem 0; 
+}
+
+.link{
+  display: block;
+  margin-bottom: 1.4rem;
+}
+
+.article{
+  padding: 1rem;
+  background-color: var(--black2);
+  margin-bottom: 1.4rem;
+}
+

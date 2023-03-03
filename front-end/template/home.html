@@ -1,0 +1,415 @@
+{% extends 'layout.html' %} {% block content %} {% block css %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{ url_for('static', filename='style/home.css') }}"
+/>
+{% endblock css %}
+<!--Start code-->
+<div class="row magazine-carousel">
+  <div class="col-12 pb-5">
+    <!--SECTION START-->
+    <section class="row">
+      <!--Start slider news-->
+      <div class="col-12 col-md-6 pb-0 pb-md-3 pt-2 pr-md-1">
+        <div id="featured" class="carousel slide carousel" data-ride="carousel">
+          <!--dots navigate-->
+          <ol class="carousel-indicators top-indicator">
+            <li data-target="#featured" data-slide-to="0" class="active"></li>
+            <li data-target="#featured" data-slide-to="1"></li>
+            <li data-target="#featured" data-slide-to="2"></li>
+            <li data-target="#featured" data-slide-to="3"></li>
+          </ol>
+
+          <!--carousel inner-->
+          <div class="carousel-inner">
+            <!--Item slider-->
+            <div class="carousel-item active c-item">
+              <div class="card border-0 rounded-0 text-light overflow zoom">
+                <div class="position-relative">
+                  <!--thumbnail img-->
+                  <div class="ratio_left-cover-1 image-wrapper">
+                    <a href="#">
+                      <img
+                        class="d-block w-100 c-img"
+                        src="../../static/media/Xeberler/bsu_stuff.jpg"
+                        alt="#"
+                      />
+                    </a>
+                  </div>
+                  <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
+                    <!--title-->
+                    <a href="#">
+                      <h2 class="h3 post-title text-white my-1">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Est, odio?
+                      </h2>
+                    </a>
+                    <!-- meta title -->
+                    <div class="news-meta">
+                      <span class="news-author"
+                        >by
+                        <a class="text-white font-weight-bold" href="#"
+                          >Jennidffer</a
+                        ></span
+                      >
+                      <span class="news-date">Oct 22, 2019</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Item slider-->
+            <div class="carousel-item c-item">
+              <div class="card border-0 rounded-0 text-light overflow zoom">
+                <div class="position-relative">
+                  <!--thumbnail img-->
+                  <div class="ratio_left-cover-1 image-wrapper">
+                    <a href="#">
+                      <img
+                        class="img-fluid w-100 c-img"
+                        src="../../static/media/Xeberler/teachers.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
+                    <!--title-->
+                    <a href="#">
+                      <h2 class="h3 post-title text-white my-1">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Est, odio?
+                      </h2>
+                    </a>
+                    <!-- meta title -->
+                    <div class="news-meta">
+                      <span class="news-author"
+                        >by
+                        <a class="text-white font-weight-bold" href="#"
+                          >Jer</a
+                        ></span
+                      >
+                      <span class="news-date">Oct 22, 2019</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Item slider-->
+            <div class="carousel-item c-item">
+              <div class="card border-0 rounded-0 text-light overflow zoom">
+                <div class="position-relative">
+                  <!--thumbnail img-->
+                  <div class="ratio_left-cover-1 image-wrapper">
+                    <a href="#">
+                      <img
+                        class="img-fluid w-100 c-img"
+                        src="../../static/media/Xeberler/bsu_front1.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
+                    <!--title-->
+                    <a href="#">
+                      <h2 class="h3 post-title text-white my-1">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Est, odio?
+                      </h2>
+                    </a>
+                    <!-- meta title -->
+                    <div class="news-meta">
+                      <span class="news-author"
+                        >by
+                        <a class="text-white font-weight-bold" href="#"
+                          >Jenn</a
+                        ></span
+                      >
+                      <span class="news-date">Oct 22, 2019</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Item slider-->
+            <div class="carousel-item c-item">
+              <div class="card border-0 rounded-0 text-light overflow zoom">
+                <div class="position-relative">
+                  <!--thumbnail img-->
+                  <div class="ratio_left-cover-1 image-wrapper">
+                    <a href="#">
+                      <img
+                        class="img-fluid w-100 c-img"
+                        src="../../static/media/Xeberler/bsu_front3.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
+                    <!--title-->
+                    <a href="#">
+                      <h2 class="h3 post-title text-white my-1">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Est, odio?
+                      </h2>
+                    </a>
+                    <!-- meta title -->
+                    <div class="news-meta">
+                      <span class="news-author"
+                        >by
+                        <a class="text-white font-weight-bold" href="#"
+                          >Lorem ipsum dolor sit amet.</a
+                        ></span
+                      >
+                      <span class="news-date">Oct 22, 2019</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--end item slider-->
+          </div>
+          <!--end carousel inner-->
+        </div>
+
+        <!--navigation-->
+        <a
+          class="carousel-control-prev"
+          href="#featured"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#featured"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
+      </div>
+      <!--End slider news-->
+
+      <!--Start box news-->
+      <div class="col-12 col-md-6 pt-2 pl-md-1 mb-3 mb-lg-4">
+        <div class="row">
+          <!--news box-->
+          <div class="col-6 pb-1 pt-0 pr-1">
+            <div
+              class="card border-0 rounded-0 text-white overflow zoom box-news"
+            >
+              <div class="position-relative">
+                <!--thumbnail img-->
+                <div class="ratio_right-cover-2 image-wrapper">
+                  <a href="#">
+                    <img
+                      class="img-fluid box-img"
+                      src="../../static/media/Xeberler/komputer zali.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
+                  <!--title-->
+                  <a>
+                    href="#"
+                    <h2 class="h5 text-white my-1">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aperiam beatae, reprehenderit
+                    </h2>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--news box-->
+          <div class="col-6 pb-1 pl-1 pt-0">
+            <div
+              class="card border-0 rounded-0 text-white overflow zoom box-news"
+            >
+              <div class="position-relative">
+                <!--thumbnail img-->
+                <div class="ratio_right-cover-2 image-wrapper">
+                  <a href="#">
+                    <img
+                      class="img-fluid box-img"
+                      src="../../static/media/Xeberler/students.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
+                  <!-- category
+                  <a class="p-1 badge badge-primary rounded-0" href="#"
+                    >Motocross</a
+                  > -->
+                  <!--title-->
+                  <a href="#">
+                    <h2 class="h5 text-white my-1">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Error, et?
+                    </h2>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--news box-->
+          <div class="col-6 pb-1 pr-1 pt-1">
+            <div
+              class="card border-0 rounded-0 text-white overflow zoom box-news"
+            >
+              <div class="position-relative">
+                <!--thumbnail img-->
+                <div class="ratio_right-cover-2 image-wrapper">
+                  <a href="#">
+                    <img
+                      class="img-fluid box-img"
+                      src="../../static/media/Xeberler/conference.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
+                  <a href="#">
+                    <h2 class="h5 text-white my-1">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Optio laboriosam
+                    </h2>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--news box-->
+          <div class="col-6 pb-1 pl-1 pt-1">
+            <div
+              class="card border-0 rounded-0 text-white overflow zoom box-news"
+            >
+              <div class="position-relative">
+                <!--thumbnail img-->
+                <div class="ratio_right-cover-2 image-wrapper">
+                  <a href="#">
+                    <img
+                      class="img-fluid box-img"
+                      src="../../static/media/Xeberler/dormit.jpg"
+                      alt="blog website templates bootstrap"
+                    />
+                  </a>
+                </div>
+                <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
+                  <a href="#">
+                    <h2 class="h5 text-white my-1">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Magnam, in?
+                    </h2>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!--end news box-->
+          </div>
+        </div>
+        <!--End box news-->
+      </div>
+    </section>
+    <!--END SECTION-->
+  </div>
+</div>
+<!-- PHOTO GALLERY -->
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="mb-3 text-light">Haqqımızda</h2>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card my-3">
+          <img
+            id="info"
+            src="../../static/media/home/lutfizade.png"
+            class="card-image-top"
+            alt="thumbnail"
+          />
+
+          <div class="card-body">
+            <h3 class="card-title">
+              <a href="#" class="text-secondary"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nostrum, quos?Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.</a
+              >
+            </h3>
+            <p class="card-text">
+              HTML stands for Hyper Text Markup Language, It helps to learn web
+              development and designing.
+            </p>
+            <a href="#" class="btn btn-primary btn-green">Ətraflı</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card my-3">
+          <img
+            src="../../static/media/home/kohne-telebeler.jpg"
+            class="card-image-top"
+            alt="thumbnail"
+          />
+
+          <div class="card-body">
+            <h3 class="card-title">
+              <a href="#" class="text-secondary"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
+                nulla?L</a
+              >
+            </h3>
+            <p class="card-text">
+              We use HTML to make website and that website helps to gain very
+              much knowledge.Pellentesque dictum consequat tincidunt. Sed
+              tincidunt tortor nec vulputate gravida.
+            </p>
+            <a href="#" class="btn btn-primary btn-green">Ətraflı</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card my-3">
+          <img
+            src="../../static/media/home/coding.jpg"
+            class="card-image-top"
+            alt="thumbnail"
+          />
+          <div class="card-body">
+            <h3 class="card-title">
+              <a href="#" class="text-secondary"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Commodi ipsum voluptatum sint adipisci, temporibus provident
+                distinctio quos consectetur labore animi?</a
+              >
+            </h3>
+            <p class="card-text">
+              Pellentesque dictum consequat tincidunt. Sed tincidunt tortor nec
+              vulputate gravida. Nam sapien nisi, malesuada at sapien suscipit,
+            </p>
+            <a href="#" class="btn btn-primary btn-green">Ətraflı</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock content %}

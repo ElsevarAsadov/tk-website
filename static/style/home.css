@@ -1,0 +1,92 @@
+
+/* ----COURSEL STYLES---- */
+.c-item{
+  height: 450px;
+}
+
+.c-img{
+  height: 450px !important;
+  object-fit: cover !important;
+}
+
+.box-news{
+  height: 300px !important;
+}
+.box-img{
+  height: 300px !important;
+  object-fit: cover !important;
+}
+.b-0 {
+  bottom: 0;
+}
+
+.bg-shadow {
+  background: rgba(76, 76, 76, 0);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(179, 171, 171, 0)), color-stop(49%, rgba(48, 48, 48, 0.37)), color-stop(100%, rgba(19, 19, 19, 0.8)));
+  background: linear-gradient(to bottom, rgba(179, 171, 171, 0) 0%, rgba(48, 48, 48, 0.71) 49%, rgba(19, 19, 19, 0.8) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313', GradientType=0 );
+}
+
+
+.btn-green {
+  background-color: var(--green) !important;
+  border: none;
+}
+
+.top-indicator {
+  right: 0;
+  top: 1rem;
+  bottom: inherit;
+  left: inherit;
+  margin-right: 1rem;
+}
+
+.overflow {
+  position: relative;
+  overflow: hidden;
+}
+
+.zoom img {
+  transition: all 0.2s linear;
+}
+
+.zoom:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+div .carousel-indicators{
+  display: none;
+}
+
+.carousel-control-next{
+  width: 10%;
+  height: 450px;
+  margin-top: 8px;
+  margin-right: 4px;
+  background-color: rgba(48, 48, 48, 0.221);
+}
+
+.carousel-control-prev{
+  width: 10%;
+  height: 450px;
+  margin-top: 8px;
+  margin-left: 4px;
+  background-color: rgba(48, 48, 48, 0.221);
+}
+
+a .carousel-control-next-icon{
+  transform: scale(1.7);
+}
+
+a .carousel-control-prev-icon{
+  transform: scale(1.7);
+}
+
+/* ---------------------- */
+
+/* ----INFO SECTION---- */
+#info{
+  max-height: 500px;
+  object-fit: cover;
+}
