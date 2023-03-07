@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ana Səhifə</title>
+    <title>{{title}}</title>
     <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="../../static/style/layout.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../static/style/layout.css"
+    />
     {% block css %} {% endblock css %}
     <!--FONTAWESOME ICONS-->
     <script
@@ -25,6 +29,7 @@
     />
     <!-- LOGOS -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
   </head>
 
   <body class="body">
@@ -33,7 +38,7 @@
       <nav class="mobile"></nav>
       <nav class="row-sm mb-2 center" id="nav">
         <div class="col d-flex align-items-center justify-content-center">
-          <a href="/home"
+          <a href="{{url_for('home')}}"
             ><img
               class=""
               id="logo"
@@ -65,7 +70,7 @@
         </form>
 
         <div class="social-media">
-          <a href="https://www.youtube.com/@BDUTV"
+          <a href="https://www.youtube.com/@BDUTV" target="_blank"
             ><img
               class="social-media-icon"
               data-toggle="tooltip"
@@ -73,7 +78,7 @@
               src="../../static/media/general/yt-logo.png"
               alt="insta"
           /></a>
-          <a href="https://www.instagram.com/bdu.az_/?hl=en"
+          <a href="https://www.instagram.com/bdu.az_/?hl=en" target="_blank"
             ><img
               class="social-media-icon"
               data-toggle="tooltip"
@@ -81,7 +86,7 @@
               src="../../static/media/general/insta-logo.png"
               alt="insta"
           /></a>
-          <a href="https://www.facebook.com/bdu.eduaz1919/"
+          <a href="https://www.facebook.com/bdu.eduaz1919/" target="_blank"
             ><img
               class="social-media-icon"
               ata-toggle="tooltip"
@@ -98,71 +103,71 @@
       >
         <i class="fa-sharp fa-solid fa-caret-down down"></i>
       </button>
-      
+
       <div class="col-12 pb-4 pt-4 nav-menu">
         <li class="menu-item">
-          <a href="home"
+          <a href="{{url_for('home')}}"
             ><i class="fa-sharp fa-solid fa-angles-right"></i>Ana Səhifə</a
           >
         </li>
 
         <li class="menu-item">
-          <a href="news"
+          <a href="{{url_for('news')}}"
             ><i class="fa-sharp fa-solid fa-angles-right"></i>Xəbərlər</a
           >
         </li>
 
         <li class="menu-item">
-          <a href="about"
+          <a href="{{url_for('about')}}"
             ><i class="fa-sharp fa-solid fa-angles-right"></i>Kafedra
             Haqqında</a
           >
         </li>
 
         <li class="menu-item">
-          <a href="table"
+          <a href="{{url_for('table')}}"
             ><i class="fa-sharp fa-solid fa-angles-right"></i>Dərs və İmtahan
             cədvələri</a
           >
         </li>
 
         <li class="menu-item">
-          <a href="#"
+          <a href="{{url_for('science')}}"
             ><i class="fa-sharp fa-solid fa-angles-right"></i>Elmi Şura</a
           >
         </li>
         <li class="menu-item">
-          <a href="#"
+          <a href="{{url_for('tyutors')}}"
             ><i class="fa-sharp fa-solid fa-angles-right"></i>Tyutorlar</a
           >
         </li>
 
         <li class="menu-item">
-          <a href="#"
+          <a href="{{url_for('dissert')}}"
             ><i class="fa-sharp fa-solid fa-angles-right"></i>Dissertasiya
             İşləri</a
           >
         </li>
         <li class="menu-item">
-          <a href="#"
+          <a href="{{url_for('genius')}}"
             ><i class="fa-sharp fa-solid fa-angles-right"></i>Görkəmli
             Məzunlar</a
           >
         </li>
         <li class="menu-item">
-          <a href="/sabah"
+          <a href="{{url_for('sabah')}}"
             ><i class="fa-sharp fa-solid fa-angles-right"></i>SABAH</a
           >
         </li>
         <li class="menu-item">
-          <a href="#"
+          <a href="{{url_for('korea')}}"
             ><i class="fa-sharp fa-solid fa-angles-right"></i>Koreya Mərkəzi</a
           >
         </li>
       </div>
 
       {% block content %} {% endblock content %}
-      
+
       <!-- LOGO SLIDER -->
       <div class="container-logos">
         <!-- <h2 class="h2-logo">Our Partners</h2> -->
@@ -176,7 +181,9 @@
           </div>
           <div class="slide">
             <a href="http://sabah.edu.az/az" target="_blank"
-              ><img class="slider-logo" src="../../static/media/general/sabah.png"
+              ><img
+                class="slider-logo"
+                src="../../static/media/general/sabah.png"
             /></a>
           </div>
           <div class="slide">
@@ -216,6 +223,7 @@
           </div>
         </section>
       </div>
+
       <!-- FOOOTER -->
       <footer class="bg-primary text-center text-lg-start text-white">
         <!-- Grid container -->
@@ -238,7 +246,7 @@
               <ul class="list-unstyled d-flex flex-row justify-content-center">
                 <li>
                   <a
-                  target="_blank"
+                    target="_blank"
                     class="text-white px-2"
                     href="https://www.facebook.com/bdu.eduaz1919/"
                   >
@@ -247,7 +255,7 @@
                 </li>
                 <li>
                   <a
-                  target="_blank"
+                    target="_blank"
                     class="text-white px-2"
                     href="https://www.instagram.com/bdu.az_/?hl=en"
                   >
@@ -256,7 +264,7 @@
                 </li>
                 <li>
                   <a
-                  target="_blank"
+                    target="_blank"
                     class="text-white ps-2"
                     href="https://www.youtube.com/@BDUTV"
                   >
@@ -271,36 +279,31 @@
             <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
               <ul class="list-unstyled">
                 <li class="mb-2">
-                  <a href="home" class="text-white"
+                  <a href="{{url_for('home')}}" class="text-white"
                     ><i class="fa-sharp fa-solid fa-circle"></i>Ana Səhifə</a
                   >
                 </li>
                 <li class="mb-2">
-                  <a href="news" class="text-white"
+                  <a href="{{url_for('news')}}" class="text-white"
                     ><i class="fa-sharp fa-solid fa-circle"></i>Xəbərlər</a
                   >
                 </li>
                 <li class="mb-2">
-                  <a href="about" class="text-white"
+                  <a href="{{url_for('about')}}" class="text-white"
                     ><i class="fa-sharp fa-solid fa-circle"></i>Kafedra
                     Haqqında</a
                   >
                 </li>
                 <li class="mb-2">
-                  <a href="table" class="text-white"
+                  <a href="{{url_for('table')}}" class="text-white"
                     ><i class="fa-sharp fa-solid fa-circle"></i>Dərs və İmtahan
                     cədvələri</a
                   >
                 </li>
 
                 <li class="mb-2">
-                  <a href="#!" class="text-white"
+                  <a href="{{url_for('science')}}" class="text-white"
                     ><i class="fa-sharp fa-solid fa-circle"></i>Elmi Şura</a
-                  >
-                </li>
-                <li class="mb-2">
-                  <a href="#!" class="text-white"
-                    ><i class="fa-sharp fa-solid fa-circle"></i>Tyutorlar</a
                   >
                 </li>
               </ul>
@@ -311,30 +314,31 @@
             <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
               <ul class="list-unstyled">
                 <li class="mb-2">
-                  <a href="#!" class="text-white"
+                  <a href="{{url_for('tyutors')}}" class="text-white"
                     ><i class="fa-sharp fa-solid fa-circle"></i>Tyutorlar</a
                   >
                 </li>
+
                 <li class="mb-2">
-                  <a href="#!" class="text-white"
+                  <a href="{{url_for('dissert')}}" class="text-white"
                     ><i class="fa-sharp fa-solid fa-circle"></i>Dissertasiya
                     İşlər</a
                   >
                 </li>
 
                 <li class="mb-2">
-                  <a href="#!" class="text-white"
+                  <a href="{{url_for('genius')}}" class="text-white"
                     ><i class="fa-sharp fa-solid fa-circle"></i>Görkəmli
                     Məzunlar</a
                   >
                 </li>
                 <li class="mb-2">
-                  <a href="/sabah" class="text-white"
+                  <a href="{{url_for('sabah')}}" class="text-white"
                     ><i class="fa-sharp fa-solid fa-circle"></i>SABAH</a
                   >
                 </li>
                 <li class="mb-2">
-                  <a href="#!" class="text-white"
+                  <a href="{{url_for('korea')}}" class="text-white"
                     ><i class="fa-sharp fa-solid fa-circle"></i>Koreya
                     Mərkəzi</a
                   >
@@ -350,8 +354,8 @@
               <ul class="list-unstyled">
                 <li>
                   <p>
-                    <i class="fas fa-map-marker-alt pe-2"></i>Z.Xəlilov küçəsi,
-                    23 AZ1148, AZ1073/1
+                    <i class="fas fa-map-marker-alt pe-2"></i><a href="https://www.google.com/maps/place/Bak%C4%B1+D%C3%B6vl%C9%99t+Universiteti/@40.3745919,49.8092797,17z/data=!4m9!1m2!7m1!2e1!3m5!1s0x40307dea2b26aff9:0x8bf044493464664c!8m2!3d40.3745539!4d49.8114651!16zL20vMGNsam52?hl=AZ" target="_blank">Z.Xəlilov küçəsi,
+                    23 AZ1148, AZ1073/1</a>
                   </p>
                 </li>
                 <li>

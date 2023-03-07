@@ -1,62 +1,136 @@
-{% extends 'layout.html' %} {% block content %}
-{% block css %}
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/about.css') }}">
+{% extends 'layout.html' %} {% block content %} {% block css %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{ url_for('static', filename='style/about.css') }}"
+/>
 {% endblock css %}
+
 <h1 class="about-h1">Haqqımızda</h1>
-<hr>
+<hr />
 
-<article>Kompüter elmləri və İnformatika müəllimi ixtisasları üzrə yüksək ixtisaslı kadrlar hazırlayan, yüksək elmi və texniki bazası olan Tətbiqi riyaziyyat və kibernetika fakültəsi 45 ildən artıqdır ki, fəaliyyət göstərir. Fakültədə 18 professor və elmlər doktoru (onlardan ikisi AMEA-nın həqiqi, biri isə müxbir üzvüdür), 52 dosent və elmlər namizədi çalışır. Fakültənin 4 müasir kompüter sinfi var.
+<div class="container mb-3">
+  <div class="row img-row">
 
-  Fakültədə elmi-pedoqoji kadrların hazırlanmasına xüsusi fikir verilir. Fakültənin hal-hazırda 16 ixtisas üzrə 130 magistrantı,11 doktorantı və 8 dissertantı var. Fakültədə müntəzəm olaraq elmi seminarlar fəaliyyət göstərir və bu seminarlarda yalnız fakültə əməkdaşları deyil, eyni zamanda digər fakültə və elmi-tədqiqat müəssisələrinin əmkdaşları da iştirak edirlər.
-  
-  Fakültə əməkdaşları aldıqları elmi nəticələri ölkəmizdə və eləcə də xarici ölkələrdə nəşr edilən elmi jurnallarda çap etdirir, müxtəlif elmi konfranslarda məruzələrlə çıxışlar edirlər.</article>
+    <div class="img-container mt-3 card animate">
+      <img src="../../static/media/about/bdu_front3.jpg" class="img-thumbnail img-sabah">
+    </div>
+
+    <div class="img-container mt-3 card animate">
+      <img src="../../static/media/about/bsu_front1.jpg" class="img-thumbnail img-sabah">
+    </div>
+
+    <div class="img-container mt-3 card animate">
+      <img src="../../static/media/about/bsu_front3.jpg" class="img-thumbnail img-sabah">
+    </div>
+
+  </div>
+</div>
+
+<article class="animate">
+  Kompüter elmləri və İnformatika müəllimi ixtisasları üzrə yüksək ixtisaslı
+  kadrlar hazırlayan, yüksək elmi və texniki bazası olan Tətbiqi riyaziyyat və
+  kibernetika fakültəsi 45 ildən artıqdır ki, fəaliyyət göstərir. Fakültədə 18
+  professor və elmlər doktoru (onlardan ikisi AMEA-nın həqiqi, biri isə müxbir
+  üzvüdür), 52 dosent və elmlər namizədi çalışır. Fakültənin 4 müasir kompüter
+  sinfi var. Fakültədə elmi-pedoqoji kadrların hazırlanmasına xüsusi fikir
+  verilir. Fakültənin hal-hazırda 16 ixtisas üzrə 130 magistrantı,11 doktorantı
+  və 8 dissertantı var. Fakültədə müntəzəm olaraq elmi seminarlar fəaliyyət
+  göstərir və bu seminarlarda yalnız fakültə əməkdaşları deyil, eyni zamanda
+  digər fakültə və elmi-tədqiqat müəssisələrinin əmkdaşları da iştirak edirlər.
+  Fakültə əməkdaşları aldıqları elmi nəticələri ölkəmizdə və eləcə də xarici
+  ölkələrdə nəşr edilən elmi jurnallarda çap etdirir, müxtəlif elmi
+  konfranslarda məruzələrlə çıxışlar edirlər.
+</article>
 
 <h1 class="about-h1">Kafedralar</h1>
-<hr>
+<hr />
 <ol>
-  <li>Tətbiqi riyaziyyat kafedrası</li>
-  <li>Riyazi fizika tənlikləri kafedrası</li>
-  <li>İnformasiya texnologiyaları və proqramlaşdırma kafedrası</li>
-  <li>Optimallaşdırma və idarəetmə kafedrası</li>
-  <li>Əməliyyatlar tədqiqi və ehtimal nəzəriyyəsi kafedrası</li>
-  <li>Iqtisadi kibernetika kafedrasi</li>
-  <li>Tətbiqi analizin riyazi üsulları kafedrası</li>
-  <li>İnformatika kafedrası</li>
-  <li>Iqtisadi kibernetika kafedrası</li>
+  <li class="animate">Tətbiqi riyaziyyat kafedrası</li>
+  <li class="animate">Riyazi fizika tənlikləri kafedrası</li>
+  <li class="animate">İnformasiya texnologiyaları və proqramlaşdırma kafedrası</li>
+  <li class="animate">Optimallaşdırma və idarəetmə kafedrası</li>
+  <li class="animate">Əməliyyatlar tədqiqi və ehtimal nəzəriyyəsi kafedrası</li>
+  <li class="animate">Iqtisadi kibernetika kafedrasi</li>
+  <li class="animate">Tətbiqi analizin riyazi üsulları kafedrası</li>
+  <li class="animate">İnformatika kafedrası</li>
+  <li class="animate">Iqtisadi kibernetika kafedrası</li>
 </ol>
 
 <h1 class="about-h1">Təhsil</h1>
-<hr>
+<hr />
 
-<h2 >Bakalavr:</h2>
+<h2>Bakalavr:</h2>
 
 <ol>
-  <li>Komüter elmləri</li>
-  <li>İnformatika müəllimi</li>
-  <li>İnformasiya təhlükəsizliyi</li>
+  <li class="animate">Komüter elmləri</li>
+  <li class="animate">İnformatika müəllimi</li>
+  <li class="animate">İnformasiya təhlükəsizliyi</li>
 </ol>
 
-<h2 >Magistratura:</h2>
+<h2>Magistratura:</h2>
 
 <ol>
-  <li>Ehtimal nəzəriyyəsi və riyazi statistika</li>
-  <li>Əməliyyatlar tədqiqi və sistemli təhlil</li>
-  <li>Riyazi kibernetika</li>
-  <li>Riyazi fizika</li>
-  <li>Optimallaşdırma və optimal idarəetmə</li>
-  <li>Hesablama diaqnostikası</li>
-  <li>Mürəkkəb sistemlərin ehtimal və statistik metodlarla təhlili</li>
-  <li>Sistem proqramlaşdırılması</li>
-  <li>Riyazi modelləşdirmə</li>
-  <li>İqtisadi fəaliyyətin riyazi və informasiya təminatı</li>
-  <li>Kompüter sistemlərinin və şəbəkələrinin proqram təminatı</li>
-  <li>Optimal idarəetmənin riyazi-iqtisadi üsulları</li>
-  <li>İnformatika</li>
-  <li>İnformasiya sistemləri</li>
-  <li>İdarəetmənin informasiya texnologiyaları</li>
-  <li>Tətbiqi riyaziyyat</li>
+  <li class="animate">Ehtimal nəzəriyyəsi və riyazi statistika</li>
+  <li class="animate">Əməliyyatlar tədqiqi və sistemli təhlil</li>
+  <li class="animate">Riyazi kibernetika</li>
+  <li class="animate">Riyazi fizika</li>
+  <li class="animate">Optimallaşdırma və optimal idarəetmə</li>
+  <li class="animate">Hesablama diaqnostikası</li>
+  <li class="animate">Mürəkkəb sistemlərin ehtimal və statistik metodlarla təhlili</li>
+  <li class="animate">Sistem proqramlaşdırılması</li>
+  <li class="animate">Riyazi modelləşdirmə</li>
+  <li class="animate">İqtisadi fəaliyyətin riyazi və informasiya təminatı</li>
+  <li class="animate">Kompüter sistemlərinin və şəbəkələrinin proqram təminatı</li>
+  <li class="animate">Optimal idarəetmənin riyazi-iqtisadi üsulları</li>
+  <li class="animate">İnformatika</li>
+  <li class="animate">İnformasiya sistemləri</li>
+  <li class="animate">İdarəetmənin informasiya texnologiyaları</li>
+  <li class="animate">Tətbiqi riyaziyyat</li>
 </ol>
 
 <h1 class="about-h1">Fakültənin beynəlxalq əlaqələri</h1>
-<article>Fakültənin əməkdaşlıq etdiyi universitetlər: Tətbiqi riyaziyyat və kibernetika fakültəsinin Moskva, Sankt-Peterburq, Novosibirsk, Rostov, Kiyev, Belarus, Tbilisi, Riqa Dövlət Universitetləri, RF EA-nın Steklov adına Riyaziyyat İnstitutu, RF EA-nın Sibir şöbəsinin Riyaziyyat İnstitutu, Moskva Energetika İnstitutu, Voronej Pedoqoji İnstitutu, Ukrayna EA-nın Kibernetika İnstitutu, Ukrayna Riyazi maşınların və sistemlərin problemləri İnstitutu, Ukraynanın Vinnitsa Texniki Universiteti, Belarus Riyaziyyat İnstitutu, həmçinin ABŞ, Almaniya, İtaliya, Böyük Britaniya, Fransa, Çexiya, İsrail, Türkiyə, İran Universitetləri ilə əlaqələri mövcuddur.</article>
+<article class="animate">
+  Fakültənin əməkdaşlıq etdiyi universitetlər: Tətbiqi riyaziyyat və kibernetika
+  fakültəsinin Moskva, Sankt-Peterburq, Novosibirsk, Rostov, Kiyev, Belarus,
+  Tbilisi, Riqa Dövlət Universitetləri, RF EA-nın Steklov adına Riyaziyyat
+  İnstitutu, RF EA-nın Sibir şöbəsinin Riyaziyyat İnstitutu, Moskva Energetika
+  İnstitutu, Voronej Pedoqoji İnstitutu, Ukrayna EA-nın Kibernetika İnstitutu,
+  Ukrayna Riyazi maşınların və sistemlərin problemləri İnstitutu, Ukraynanın
+  Vinnitsa Texniki Universiteti, Belarus Riyaziyyat İnstitutu, həmçinin ABŞ,
+  Almaniya, İtaliya, Böyük Britaniya, Fransa, Çexiya, İsrail, Türkiyə, İran
+  Universitetləri ilə əlaqələri mövcuddur.
+</article>
+
+<div class="container mb-3">
+  <div class="row img-row">
+
+    <div class="img-container mt-3 card animate">
+      <a href="https://vntu.edu.ua/en" target="_blank" class="reuni">
+        <img src="../../static/media/about/dont.png" class="img-thumbnail img-sabah">
+      </a>
+    </div>
+
+    <div class="img-container mt-3 card animate">
+      <a href="https://www.msu.ru/en/" target="_blank" class="reuni">
+        <img src="../../static/media/about/st-uni.jpg" class="img-thumbnail img-sabah">
+      </a>
+    </div>
+
+    <div class="img-container mt-3 card animate">
+      <a href="https://www.mi-ras.ru/?l=1" target="_blank" class="reuni">
+        <img src="../../static/media/about/steklov.png" class="img-thumbnail img-sabah">
+      </a>
+    </div>
+
+    <div class="img-container mt-3 card animate">
+      <a href="https://www.vsu.ru/english/" target="_blank" class="reuni">
+        <img src="../../static/media/about/voro.jpg" class="img-thumbnail img-sabah">
+      </a>
+      
+    </div>
+
+  </div>
+</div>
+
 {% endblock content %}

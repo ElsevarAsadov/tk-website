@@ -1,13 +1,18 @@
-{% extends 'layout.html' %}
-
-{% block css %}
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/table.css') }}">
-{% endblock css %}
-
-{% block content %}
+{% extends 'layout.html' %} {% block css %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{ url_for('static', filename='style/table.css') }}"
+/>
+{% endblock css %} {% block content %}
 <h1>Ders Cedveli</h1>
-<hr>
+<hr/>
 
-<h3>{{ getsemester() }}</h3>
-<embed src="../../static/cedvel/cedvel.pdf" type="application/pdf" width="100%" height="600px" />
+<h3 class="animate">{{ getsemester() }}</h3>
+<embed
+  src="../../static/cedvel/cedvel.pdf"
+  type="application/pdf"
+  width="100%"
+  height="600px"
+/>
 {% endblock content %}s

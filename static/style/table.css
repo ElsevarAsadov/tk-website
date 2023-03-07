@@ -1,8 +1,8 @@
-embed{
+embed {
   margin: 2rem 0;
 }
 
-hr{
+hr {
   background-color: var(--yellow) !important;
   height: 5px !important;
 }

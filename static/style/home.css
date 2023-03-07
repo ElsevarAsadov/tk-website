@@ -1,18 +1,17 @@
-
 /* ----COURSEL STYLES---- */
-.c-item{
+.c-item {
   height: 450px;
 }
 
-.c-img{
+.c-img {
   height: 450px !important;
   object-fit: cover !important;
 }
 
-.box-news{
+.box-news {
   height: 300px !important;
 }
-.box-img{
+.box-img {
   height: 300px !important;
   object-fit: cover !important;
 }
@@ -22,15 +21,26 @@
 
 .bg-shadow {
   background: rgba(76, 76, 76, 0);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(179, 171, 171, 0)), color-stop(49%, rgba(48, 48, 48, 0.37)), color-stop(100%, rgba(19, 19, 19, 0.8)));
-  background: linear-gradient(to bottom, rgba(179, 171, 171, 0) 0%, rgba(48, 48, 48, 0.71) 49%, rgba(19, 19, 19, 0.8) 100%);
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, rgba(179, 171, 171, 0)),
+    color-stop(49%, rgba(48, 48, 48, 0.37)),
+    color-stop(100%, rgba(19, 19, 19, 0.8))
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(179, 171, 171, 0) 0%,
+    rgba(48, 48, 48, 0.71) 49%,
+    rgba(19, 19, 19, 0.8) 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313', GradientType=0 );
 }
-
 
 .btn-green {
   background-color: var(--green) !important;
   border: none;
+  margin-top: 1.2rem !important;
 }
 
 .top-indicator {
@@ -55,11 +65,11 @@
   transform: scale(1.1);
 }
 
-div .carousel-indicators{
+div .carousel-indicators {
   display: none;
 }
 
-.carousel-control-next{
+.carousel-control-next {
   width: 10%;
   height: 450px;
   margin-top: 8px;
@@ -67,26 +77,108 @@ div .carousel-indicators{
   background-color: rgba(48, 48, 48, 0.221);
 }
 
-.carousel-control-prev{
+.carousel-control-prev {
   width: 10%;
   height: 450px;
   margin-top: 8px;
-  margin-left: 4px;
+  margin-left: 15px;
   background-color: rgba(48, 48, 48, 0.221);
 }
 
-a .carousel-control-next-icon{
+a .carousel-control-next-icon {
   transform: scale(1.7);
 }
 
-a .carousel-control-prev-icon{
+a .carousel-control-prev-icon {
   transform: scale(1.7);
 }
 
 /* ---------------------- */
 
 /* ----INFO SECTION---- */
-#info{
-  max-height: 500px;
+
+.about-card{
+  background-color: var(--black2);
+}
+
+.about-card p{
+  color: white !important;
+}
+#lutfi {
+  object-fit: contain;
+  object-position: center;
+}
+
+.box-info {
+  height: 400px !important;
+}
+
+.card-body {
+  height: 250px !important;
+}
+
+.box-card {
+  padding-bottom: 40px;
+}
+
+.box-img {
+  height: 300px !important;
+}
+
+.box-btn {
+  margin: auto auto;
+  width: 25%;
+  height: 40px;
+}
+
+.helper-btn{
+  width: 25%;
+  height: 40px;
+  margin-left: 10px;
+  background-color: var(--yellow) !important;
+  color: black !important; 
+}
+
+
+.box-btn:hover,
+.box-btn:focus,
+.box-btn:active {
+  box-shadow: 0 0 2px 2px var(--green);
+}
+
+.helper-btn:hover,
+.helper-btn:focus,
+.helper-btn:active {
+  box-shadow: 0 0 2px 2px var(--yellow);
+}
+
+.box-card{
+  background-color: var(--black2);
+}
+
+.box-card p{
+  color: white !important;
+  padding: 5px !important;
+}
+
+/* ---------------------- */
+
+.helper-img{
+  height: 200px;
   object-fit: cover;
+}
+
+@media screen and (min-width: 1200px) {
+  .media{
+    flex-direction: row;
+  }
+
+  /* ----HELPFULL CONTENTS---- */
+
+#helper-container{
+  display: row !important;
+  justify-content: space-evenly !important;
+}
+/* ---------------------- */
+  
 }

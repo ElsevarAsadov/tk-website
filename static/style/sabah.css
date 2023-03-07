@@ -1,17 +1,28 @@
-.hr{
-  height: 5px;
-  background-color: white;
-  margin: 1.5rem 0; 
-}
-
-.link{
+.link {
   display: block;
   margin-bottom: 1.4rem;
 }
 
-.article{
-  padding: 1rem;
+.article {
+  padding: 20px;
+  border-radius: 10px;
   background-color: var(--black2);
   margin-bottom: 1.4rem;
 }
 
+.img-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-container{
+  width: 400px !important;
+  height: 300px !important;
+  margin-right: 20px !important;
+}
+
+.img-sabah{
+  width: 400px !important;
+  height: 300px !important;
+  object-fit: cover !important;
+}

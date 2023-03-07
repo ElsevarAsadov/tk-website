@@ -1,20 +1,57 @@
-article, ol{
+article,
+ol {
+  border-radius: 10px;
   margin: 1.8em 0;
   font-size: 1.4rem;
   background-color: var(--black2);
-  padding: 10px;
+  padding: 20px;
 }
-
 
 ol li {
   margin-left: 1.6rem;
 }
-hr{
-  margin: 1.8em 0;
-  background-color: white;
-  height: 5px;
-}
-#about-img{
+
+#about-img {
   max-height: 140px;
+}
+
+.img-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-container{
+  width: 400px !important;
+  height: 300px !important;
+  margin-right: 20px !important;
+}
+
+.img-sabah{
+  width: 400px !important;
+  height: 300px !important;
+  object-fit: cover !important;
+}
+
+
+.reuni::after {
+  content: "Veb Səhifəyə Get";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--yellow);
+  bottom: 0;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.663);
+  transition: width 0.3s ease-in-out;
+  width: 0;
+  overflow: hidden;
+  font-size: 2rem;
+  white-space: nowrap;
+
+}
+
+.reuni:hover::after, .reuni:focus::after{
+  width: 100%;
 }
 

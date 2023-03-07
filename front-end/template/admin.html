@@ -1,0 +1,62 @@
+{% extends 'layout.html' %} {% block css %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{ url_for('static', filename='style/admin.css') }}"
+/>
+{% endblock css %} {% block content %}
+
+<form
+  class="was-validated"
+  action=""
+  ,
+  method="POST"
+  enctype="multipart/form-data"
+>
+  <div class="col-md-4 mb-3 pl-0">
+    <label for="validationServer01">Xəbər başlığı</label>
+    <input
+      type="text"
+      name="header"
+      class="form-control is-valid"
+      id="validationServer01"
+      placeholder="Max 35 hərf ola bilər"
+      maxlength="35"
+      required
+    />
+    <div class="invalid-feedback">Başlığı daxil edin!</div>
+  </div>
+
+  <div class="mb-3">
+    <label for="validationTextarea">Xəbərin məzmunu</label>
+    <textarea
+      class="form-control is-valid"
+      name="main"
+      id="news-content"
+      placeholder="Bura yazın"
+      required
+    ></textarea>
+    <div class="invalid-feedback">Xəbərin məzmununu daxil edin!</div>
+  </div>
+
+  <div class="custom-file">
+    <input
+      type="file"
+      name="image"
+      class="custom-file-input"
+      id="validatedCustomFile"
+      required
+    />
+    <label class="custom-file-label" for="validatedCustomFile"
+      >Xəbərə aid bir ədəd şəkil daxil edin</label
+    >
+    <div class="invalid-feedback">
+      Xəbər şəkili jpeg və ya png formatında olmasu münasibdir
+    </div>
+  </div>
+
+  <button id="submit" class="btn btn-primary mt-4" type="submit">
+    Xəbəri paylaş
+  </button>
+</form>
+{% endblock content %}

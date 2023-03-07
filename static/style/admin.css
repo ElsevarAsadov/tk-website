@@ -1,0 +1,17 @@
+#news-content {
+  height: 200px;
+}
+
+#submit {
+  background-color: var(--yellow);
+  border: none;
+  transform: scale(1.5);
+  margin-left: 1.8em;
+}
+
+#submit:hover,
+#submit:focus,
+#submit:active {
+  background-color: var(--yellow);
+  box-shadow: 0 0 2px 2px var(--yellow);
+}
